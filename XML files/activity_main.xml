@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather"
+        android:textColor="@color/colorPrimary"
+        android:textSize="50dp"
+        android:translationY="420dp"
+        android:translationX="100dp"
+        tools:ignore="MissingConstraints"
+ />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Town"
+        android:textSize="20dp"
+        android:translationZ="@dimen/inner_frame_layout_padding"
+        android:translationY="490dp"
+        android:translationX="123dp"
+        tools:ignore="MissingConstraints"
+        />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:background="@drawable/home"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="391dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="516dp"
+        android:layout_marginEnd="20dp"
+        android:autofillHints="Search Here..."
+        android:fontFamily="sans-serif"
+        android:textSize="12pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="@string/search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchEditText"
+        app:layout_constraintVertical_bias="0.07">
+
+    </Button>
+</androidx.constraintlayout.widget.ConstraintLayout>
